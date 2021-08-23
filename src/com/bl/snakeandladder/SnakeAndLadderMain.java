@@ -10,10 +10,12 @@ public class SnakeAndLadderMain {
 		int position = 0;
 		int dieNum;
 		int option;
+		int dieCount=0;
 		
 		System.out.println("Welcome to Snake and Ladder program");
 		
 		while(position!=100) {
+			dieCount++;
 			System.out.printf("\nPlayer 1 current position : %d",position);
 			
 			dieNum=(int)Math.floor(Math.random()*((6-1)+1)+1);
@@ -45,6 +47,8 @@ public class SnakeAndLadderMain {
 				System.out.printf("\nOption No Play\nPlayer stays in the same position \nNew Position: %d\n",position);
 			}
 		}
+		System.out.println();
+		System.out.println("Total number of times the die was rolled : "+dieCount);
 		System.out.printf("\nCongratulations!!!! \nYou have won the game");
 		
 		
