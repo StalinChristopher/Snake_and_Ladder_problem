@@ -11,8 +11,6 @@ public class SnakeAndLadderMain {
 		System.out.println("Welcome to Snake and Ladder program");
 		
 		while(position<=100) {
-//			if(position<0)
-//				position=0;
 			System.out.printf("\nPlayer 1 current position : %d",position);
 			
 			dieNum=(int)Math.floor(Math.random()*((6-1)+1)+1);
